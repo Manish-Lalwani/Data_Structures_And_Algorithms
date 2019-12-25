@@ -1,3 +1,19 @@
+#LinkedLists
+'''
+reference : https://www.geeksforgeeks.org/data-structures/linked-list/
+Linear Data Structure
+Not contiguous (elements are not store in continuous blocks of memory)
+
+
+
+Why Linked List
+Can grow or shrink unlike array
+Ease of insertion/deletion
+
+Disadvantage :
+Random access not allowed need to traverse each  time.
+'''
+
 class Node:
 
 	def __init__(self,data=None):
@@ -82,7 +98,11 @@ class LinkedList:
 			print("    Linked list is not empty")
 			return False
 
-	
+
+
+	def insert_multiple(self,list1):
+		for element in list1:
+			self.insert(element)
 ######################################################
 		
 #Creating object of LinkedList class
@@ -117,3 +137,14 @@ l1.remove(element)
 print("=================================================")
 print("Printing Elements after removing : {}".format(element))
 l1.display_list()
+
+
+list1 = [11,21,31,41,51,61]
+l1.insert_multiple(list1)
+
+
+#Displaying elements in Linked List
+print("=================================================")
+print("Printing Elements after Inserting multiple elements at once using list in Linked List")
+l1.display_list()
+
