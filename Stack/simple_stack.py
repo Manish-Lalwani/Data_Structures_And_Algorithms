@@ -1,6 +1,6 @@
 #Stack using list
 
-class MyQueue:
+class MyStack:
 
 	def __init__(self):
 		self.my_stack =[]
@@ -28,7 +28,7 @@ class MyQueue:
 
 
 #################################################
-mq1 = MyQueue()
+mq1 = MyStack()
 
 mq1.push(10)
 mq1.push(20)
